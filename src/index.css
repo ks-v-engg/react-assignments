@@ -21,3 +21,8 @@ input {
   margin: 5px;
   padding: 5px;
 }
+
+table, th, td , thead, tbody {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

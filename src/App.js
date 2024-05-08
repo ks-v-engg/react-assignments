@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Studentlistcontext } from './context/studentcontext';
+import Studentform from './Components/Studentform';
+import Onandoff from './Components/Assignmentone';
+import Header from './Components/Header';
+import Oddoreven from './Components/Oddoreven';
+import Weekday from './Components/Weekday';
+import Login from './Components/Login';
+import Cltofh from './Components/Cltofh';
 
 function App() {
+  const [form,setform] = React.useState({});
+  const [studentlist,setstudentlist] = React.useState([]);
   return (
+  <div>
+    <div>
+      <Header />
+      <Onandoff />
+      <Oddoreven />
+      <Weekday />
+      <Login />
+      <Cltofh />
+    </div>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Studentlistcontext.Provider value={{form,setform,studentlist,setstudentlist}}>
+      <Studentform />
+    </Studentlistcontext.Provider>
+     </div>
     </div>
   );
 }

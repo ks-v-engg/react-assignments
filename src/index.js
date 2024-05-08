@@ -2,24 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Onandoff from './Components/Assignmentone';
-import Header from './Components/Header';
-import Oddoreven from './Components/Oddoreven';
-import Weekday from './Components/Weekday';
-import Login from './Components/Login';
-import Cltofh from './Components/Cltofh';
-import Studentform from './Components/Studentform';
+
+
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-  <Header />
-  <Onandoff />
-  <Oddoreven />
-  <Weekday />
-  <Login />
-  <Cltofh />
-  <Studentform />
+
+    <App />
+   
   </React.StrictMode>
 );
 
