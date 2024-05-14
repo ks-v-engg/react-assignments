@@ -83,7 +83,7 @@ const Studentform = () => {
             value={studentcontext.form.city}
             onChange={(event) => studentcontext.setform({...studentcontext.form,city: event.target.value})}>
             {options.map((option) => (
-              <option value={option.value}>{option.label}</option>
+              <option key={option.value} value={option.value}>{option.label}</option>
             ))}
           </select> <br />
 

@@ -11,6 +11,7 @@ import Cltofh from './Components/Cltofh';
 import Cltofhincontext from './Components/Cltofhincontext';
 import { Cltof } from './context/cltofhcontext';
 import Loginref from './Components/Loginref';
+import Dropdownval from './Dropdownval';
 
 function App() {
   const [form,setform] = React.useState({});
@@ -23,11 +24,12 @@ function App() {
   <div>
     <div>
       <Header />
-      <Onandoff />
+       <Onandoff />
       <Oddoreven />
       <Weekday />
       <Login />
       <Cltofh />
+     
     </div>
     <div className="App">
     <Studentlistcontext.Provider value={{form,setform,studentlist,setstudentlist}}>
@@ -40,7 +42,8 @@ function App() {
       </Cltof.Provider>
      </div>
      <Loginref />
-    </div>
+     <Dropdownval />
+     </div>
   );
 }
 
