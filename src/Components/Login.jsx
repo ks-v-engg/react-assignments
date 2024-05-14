@@ -7,7 +7,6 @@ const [result,setResult] = React.useState('');
 
 const onSubmit = (event) => {
     event.preventDefault();
-
    
    if (email === 'test@gmail.com' && passowrd === '12345678') 
     {

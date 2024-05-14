@@ -134,9 +134,6 @@ const Studentform = () => {
               }
             </tbody>
          </table>
-
-         
-        
      </div>
 }
 export default Studentform;
